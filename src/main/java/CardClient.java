@@ -56,10 +56,10 @@ public class CardClient {
 		// Dealt cards:
 		// ace of hearts (point value = 14)
 
-//		// Shuffle the deck
-//		Deck d2 = new Deck(ranks, suits, values);
-//		d2.shuffle();
-//		System.out.println(d2);
-//		// The output will be some random ordering of the cards in the deck
+		// Shuffle the deck
+		Deck d2 = new Deck(ranks, suits, values);
+		d2.shuffle();
+		System.out.println(d2);
+		// The output will be some random ordering of the cards in the deck
 	}
 }

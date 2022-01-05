@@ -1,15 +1,15 @@
-# Week 1 Day 1: Elevens Game Part One
+# Week 1 Day 2: Elevens Game Part Two
 
-In class today, you'll be writing some code to implement the Card and Deck classes for the Elevens game. 
+In class today, you'll be writing some code to implement the rules for the Elevens Game. 
 
 Instructions for the in-class work and the homework can be found on Canvas. 
 
 <br />
 
-Add code to [Card.java](src/main/java/Card.java) and [Deck.java](src/main/java/Deck.java) files, and then test your code in the [CardClient.java](src/main/java/CardClient.java) file. 
+Add code to [ElevensBoard.java](src/main/java/ElevensBoard.java) and [Deck.java](src/main/java/Deck.java) files, and then test your code by running the main method in [Main.java](src/main/java/Main.java) file. 
 
 ## Run your code with:
-The easiest way to run your code is to press the play button in [CardClient.java](src/main/java/CardClient.java).
+The easiest way to run your code is to press the play button in [Main.java](src/main/java/Main.java).
 
 However, you can also run your code by typing the following into the Terminal.
 

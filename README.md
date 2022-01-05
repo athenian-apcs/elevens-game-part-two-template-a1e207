@@ -6,7 +6,7 @@ Instructions for the in-class work and the homework can be found on Canvas.
 
 <br />
 
-Add code to [ElevensBoard.java](src/main/java/ElevensBoard.java) and [Deck.java](src/main/java/Deck.java) files, and then test your code by running the main method in [Main.java](src/main/java/Main.java) file. 
+Add code to [ElevensBoard.java](src/main/java/ElevensBoard.java), and then test your code by running the main method in [Main.java](src/main/java/Main.java) file. 
 
 ## Run your code with:
 The easiest way to run your code is to press the play button in [Main.java](src/main/java/Main.java).

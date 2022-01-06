@@ -9,6 +9,7 @@ public class MyTests {
 
     @Test
     public void testContainsPairSum11() {
+        // Some basic tests
         String[] ranks = { "ace", "4", "5", "6", "7", "9", "10", "jack", "king" };
         int[] pointValues = { 1, 4, 5, 6, 7, 9, 10, 0, 0 };
 
@@ -31,7 +32,7 @@ public class MyTests {
         e.cards[6] = null;
         assertEquals(false, e.containsPairSum11(e.getAllCardIndexes()), "Given the cards [A, 6, 7, 9, J, K], the result of looking for an 11-pair should be: false");
 
-
+        // Testing cards that are farther away from each other
         String[] ranks2 = { "9", "8", "4", "6", "6", "9", "10", "3", "king" };
         int[] pointValues2 = { 9, 8, 4, 6, 6, 9, 10, 3, 0 };
 
@@ -43,6 +44,12 @@ public class MyTests {
         ElevensBoard e2 = new ElevensBoard();
         e2.cards = cards2;
         assertEquals(true, e2.containsPairSum11(e2.getAllCardIndexes()), "Given the cards [9, 8, 4, 6, 6, 9, 10, 3, K], the result of looking for an 11-pair should be: true");
+        assertEquals(false, e2.containsPairSum11(new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5))), "Given the card indexes [1, 2, 3, 4, 5] from the board [9, 8, 4, 6, 6, 9, 10, 3, K], the result of looking for an 11-pair should be: false");
+        assertEquals(true, e2.containsPairSum11(new ArrayList<Integer>(Arrays.asList(1, 7))), "Given the card indexes [1, 7] from the board [9, 8, 4, 6, 6, 9, 10, 3, K], the result of looking for an 11-pair should be: true");
+        assertEquals(false, e2.containsPairSum11(new ArrayList<Integer>(Arrays.asList(0, 2, 3, 4, 5, 6, 8))), "Given the card indexes [0, 2, 3, 4, 5, 6, 8] from the board [9, 8, 4, 6, 6, 9, 10, 3, K], the result of looking for an 11-pair should be: false");
+        assertEquals(false, e2.containsPairSum11(new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 5, 6))), "Given the card indexes [0, 1, 2, 3, 4, 5, 6] from the board [9, 8, 4, 6, 6, 9, 10, 3, K], the result of looking for an 11-pair should be: false");
+        assertEquals(false, e2.containsPairSum11(new ArrayList<Integer>(Arrays.asList(3, 4, 5, 6, 7, 8))), "Given the card indexes [3, 4, 5, 6, 7, 8] from the board [9, 8, 4, 6, 6, 9, 10, 3, K], the result of looking for an 11-pair should be: false");
+        assertEquals(false, e2.containsPairSum11(new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5, 6, 7))), "Given the card indexes [2, 3, 4, 5, 6, 7] from the board [9, 8, 4, 6, 6, 9, 10, 3, K], the result of looking for an 11-pair should be: false");
     }
 
     @Test
@@ -71,6 +78,12 @@ public class MyTests {
         ElevensBoard e2 = new ElevensBoard();
         e2.cards = cards2;
         assertEquals(true, e2.containsJQK(e2.getAllCardIndexes()), "Given the cards [9, Q, 4, 6, 6, J, 10, 3, K], the result of looking for a JQK should be: true");
+        assertEquals(false, e2.containsJQK(new ArrayList<Integer>(Arrays.asList(2, 3, 4, 5, 6, 7, 8))), "Given the card indexes [2, 3, 4, 5, 6, 7, 8] from the board [9, Q, 4, 6, 6, J, 10, 3, K], the result of looking for a JQK should be: false");
+        assertEquals(false, e2.containsJQK(new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 5, 6, 7))), "Given the card indexes [0, 1, 2, 3, 4, 5, 6, 7] from the board [9, Q, 4, 6, 6, J, 10, 3, K], the result of looking for a JQK should be: false");
+        assertEquals(false, e2.containsJQK(new ArrayList<Integer>(Arrays.asList(0, 2, 3, 4, 5, 6, 7, 8))), "Given the card indexes [0, 2, 3, 4, 5, 6, 7, 8] from the board [9, Q, 4, 6, 6, J, 10, 3, K], the result of looking for a JQK should be: false");
+        assertEquals(false, e2.containsJQK(new ArrayList<Integer>(Arrays.asList(0, 1, 2, 3, 4, 6, 7, 8))), "Given the card indexes [0, 1, 2, 3, 4, 6, 7, 8] from the board [9, Q, 4, 6, 6, J, 10, 3, K], the result of looking for a JQK should be: false");
+        assertEquals(true, e2.containsJQK(new ArrayList<Integer>(Arrays.asList(1, 5, 8))), "Given the card indexes [1, 5, 8] from the board [9, Q, 4, 6, 6, J, 10, 3, K], the result of looking for a JQK should be: true");
+        assertEquals(true, e2.containsJQK(new ArrayList<Integer>(Arrays.asList(0, 1, 5, 6, 8))), "Given the card indexes [0, 1, 5, 6, 8] from the board [9, Q, 4, 6, 6, J, 10, 3, K], the result of looking for a JQK should be: true");
     }
 
     @Test

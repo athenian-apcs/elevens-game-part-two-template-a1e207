@@ -129,7 +129,7 @@ public class MyTests {
         assertEquals(false, e.isLegal(new ArrayList<Integer>(Arrays.asList(0, 1))), "The legality of the cards with index [0, 1] from the board [Q, 4, 5, 6, 7, 9, 10, J, K] should be: false");
         assertEquals(false, e.isLegal(new ArrayList<Integer>(Arrays.asList(2, 4))), "The legality of the cards with index [2, 4] from the board [Q, 4, 5, 6, 7, 9, 10, J, K] should be: false");
         assertEquals(false, e.isLegal(new ArrayList<Integer>(Arrays.asList(0, 6, 7))), "The legality of the cards with index [0, 6, 7] from the board [Q, 4, 5, 6, 7, 9, 10, J, K] should be: false");
-        assertEquals(false, e.isLegal(new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5))), "The legality of the cards with index [0, 1] from the board [Q, 4, 5, 6, 7, 9, 10, J, K] should be: false");
-        assertEquals(false, e.isLegal(new ArrayList<Integer>(Arrays.asList(0, 6, 7, 8))), "The legality of the cards with index [0, 1] from the board [Q, 4, 5, 6, 7, 9, 10, J, K] should be: false");
+        assertEquals(false, e.isLegal(new ArrayList<Integer>(Arrays.asList(1, 2, 3, 4, 5))), "The legality of the cards with index [1, 2, 3, 4, 5] from the board [Q, 4, 5, 6, 7, 9, 10, J, K] should be: false");
+        assertEquals(false, e.isLegal(new ArrayList<Integer>(Arrays.asList(0, 6, 7, 8))), "The legality of the cards with index [0, 6, 7, 8] from the board [Q, 4, 5, 6, 7, 9, 10, J, K] should be: false");
     }
 }

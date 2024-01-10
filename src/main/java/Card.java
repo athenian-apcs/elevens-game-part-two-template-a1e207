@@ -19,27 +19,21 @@ public class Card {
 
 	// Accesses this Card's rank.
 	public String getRank() {
-		// YOUR CODE HERE
 		return this.rank;
 	}
 
 	// Accesses this Card's suit.
 	public String getSuit() {
-		// YOUR CODE HERE
 		return this.suit;
 	}
 
-
-
 	// Accesses this Card's point value.
 	public int getPointValue() {
-		// YOUR CODE HERE
 		return this.pointValue;
 	}
 
 	// Compare this card with another
 	public boolean equals(Card other) {
-		// YOUR CODE HERE
 		return this.rank.equals(other.rank) && this.suit.equals(other.suit) && this.pointValue == other.pointValue;
 	}
 
@@ -47,7 +41,6 @@ public class Card {
 	//     "[Rank] of [Suit] (point value = [PointValue])".
 	//     e.g. "Queen of Spades (point value = 10);
 	public String toString() {
-		// YOUR CODE HERE
 		return rank + " of " + suit + " (point value = " + pointValue + ")";
 	}
 

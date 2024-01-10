@@ -37,13 +37,11 @@ public class Deck {
 	// Determines if this deck is empty (there are no undealt cards).
 	// returns true if this deck is empty, false otherwise.
 	public boolean isEmpty() {
-		// YOUR CODE HERE
 		return size == 0;
 	}
 
 	// Returns the size (number of undealt cards) in this deck.
 	public int getSize() {
-		// YOUR CODE HERE
 		return size;
 	}
 
@@ -51,7 +49,6 @@ public class Deck {
 	// return the card just dealt, or null if all the cards have been dealt already
 	// Updates the size as well
 	public Card deal() {
-		// YOUR CODE HERE
 		if (size != 0) {
 			size--;
 			return cards.get(size);
@@ -63,7 +60,6 @@ public class Deck {
 
 	// Shuffles the deck by repeatedly randomly swapping pairs of cards
 	public void shuffle() {
-		// YOUR CODE HERE
 		for (int i = 0; i < cards.size(); i++) {
 			int rand = (int) (Math.random() * cards.size());
 			Card temp = cards.get(rand);
@@ -77,7 +73,6 @@ public class Deck {
 	// OPTIONAL: Write code that carries out a "perfect" shuffle
 	// that perfectly interweaves the two halves of the deck
 	public void perfectShuffle() {
-		// YOUR CODE HERE
 		ArrayList<Card> firstHalf = new ArrayList<Card>();
 		ArrayList<Card> secondHalf = new ArrayList<Card>();
 
